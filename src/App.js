@@ -50,6 +50,7 @@ function App() {
     <Router>
     <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} lable={label} key={new Date()} />
  <Alert alert={alert} mode={mode}></Alert>
+  <TextArea showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>
  <Routes>
           {/* <Route path="/about">
             <About />
@@ -57,7 +58,7 @@ function App() {
           
           
           
-          <Route path='/' element={ <TextArea showAlert={showAlert} heading="Try TextUtils - word counter, character counter, remove extra spaces" mode={mode}/>} />
+          
           <Route path='/about' element={<About></About>} />
             
           
